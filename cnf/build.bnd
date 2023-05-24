@@ -1,0 +1,21 @@
+
+Bundle-Version:             1.0.0.${tstamp}
+
+-remoteworkspace        true
+-runfw:                 org.apache.felix.framework
+-runee:                 JavaSE-17
+
+# Eclipse Release repositories 
+eclipse.version          = 4.24
+eclipse.name             = 2022-06
+eclipse.platform.version = R-4.24-202206070700
+eclipse.simu.version     = 202206151000
+
+eclipse.platform.baseurl = http://download.eclipse.org/eclipse/updates
+eclipse.platform.name    = "Platform_${eclipse.platform.version}"
+eclipse.platform.url     = "${eclipse.platform.baseurl}/${eclipse.version}/${eclipse.platform.version}"
+
+-plugin.10.eclipse.platform: \
+    aQute.bnd.repository.p2.provider.P2Repository; \
+        name  = ${eclipse.platform.name}; \
+        url   = ${eclipse.platform.url}

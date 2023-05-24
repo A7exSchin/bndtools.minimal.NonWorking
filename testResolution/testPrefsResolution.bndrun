@@ -1,0 +1,1 @@
+-runrequires: bnd.identity;id='org.osgi.service.prefs'
