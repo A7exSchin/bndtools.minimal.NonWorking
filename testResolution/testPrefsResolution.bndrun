@@ -1,1 +1,3 @@
+-runfw: org.eclipse.osgi;version='[3.18.0.v20220516-2155,3.18.0.v20220516-2155]'
+-runee: JavaSE-17
 -runrequires: bnd.identity;id='org.osgi.service.prefs'
